@@ -13,7 +13,7 @@ This repository contains the code, experiments, and documentation for our master
 ## 📁 Project Structure
 
 ```
-ESG-Topic-Classification/
+ESGlassifier/
 │
 ├── data/                   
 │   ├── base_data/              # Sampled 10k data three times 
@@ -46,15 +46,12 @@ ESG-Topic-Classification/
 │   └── tune.py                 # Hyperparameter tuning script
 │
 ├── results/
-│   └── few_shot/
-│       ├── few_shot_cv_results_environmental.csv
-│       ├── few_shot_cv_results_governance.csv
-│       └── few_shot_cv_results_social.csv
-│
-├── utils/                    
-├── requirements.txt
-├── .gitignore
-└── README.md
+│   ├── few_shot/
+│   ├── latex_tables/
+│   ├── results_table_latex.py
+│   └── visualize_all_sweeps.py           
+├── README.md
+└── requirements.txt
 ```
 
 ## 🚀 Setup and Training
