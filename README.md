@@ -1,4 +1,5 @@
-# ESG Topic Classification
+# 🌍 ESGlassifier
+## From Text to Transparency: Extracting Environmental, Social, and Governance Aspects from Sentence-Level Text
 
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-orange)](https://huggingface.co/)
