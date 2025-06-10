@@ -1,0 +1,46 @@
+wandb:
+  project_name: "Governance"
+  run_mode: "sweep"
+
+
+train:
+  model: "roberta"  
+
+data:
+  filepath: ../data/domain_2k/governance_2k.csv
+  test_size: 0.2
+
+bert:
+  model_name: "bert-base-uncased"
+  num_labels: 2
+  epochs: 3
+  batch_size: 32
+  learning_rate: 7e-5
+
+
+sbert:
+  model_name: sentence-transformers/all-mpnet-base-v2
+  batch_size: 16
+  num_iterations: 20
+  shots_per_class: [4, 8, 16]
+  few_shot_mode: true
+  seeds: [1, 2, 3, 4, 5]    
+  use_cross_validation: true  # or false
+  n_folds: 5
+  seed: 42
+  model_save_path: ./saved_sbert_model
+
+roberta:
+  model_name: "roberta-base"
+  num_labels: 2
+  epochs: 3
+  batch_size: 2
+  learning_rate: 3e-5
+
+distilroberta:
+  num_labels: 2
+  model_name: distilroberta-base
+  learning_rate: 2e-5
+  batch_size: 3
+  epochs: 3
+
